@@ -1,0 +1,16 @@
+#{extends 'main.html' /}
+#{set title:'Person' /}
+<hr/>
+#{if flash.error}
+    <p style="color:#c00">
+        ${flash.error}
+    </p>
+#{/if}
+<hr/>
+<form action="@{PersonController.denglu()}" method="post">
+	<input type="text" name="name"/><br/>
+	<input type="password" name="password"/><br/>
+	<input type="submit" value="denglu"/>
+</form>
+
+

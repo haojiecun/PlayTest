@@ -1,0 +1,14 @@
+#{extends 'main.html' /}
+#{set title:'Person' /}
+
+
+<hr/>
+
+<form action="@{PersonController.addPerson()}" method="post">
+	name:<input type="text" name="name"/><br/>
+	sex:<input type="text" name="sex"/><br/>
+	age:<input type="text" name="age"/><br/>
+	password:<input type="password" name="password"/><br/>
+	<input type="submit"value="add a new Person"/>
+</form>
+
